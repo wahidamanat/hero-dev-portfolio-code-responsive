@@ -30,7 +30,11 @@
     color: white;
     cursor: pointer;
 }
-
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 .section-heading {
     max-width: 827px;
     text-align: center;
@@ -292,6 +296,11 @@ footer .footer-container {
     width: 95%;
     
 }
+
+.btn-group{
+    justify-content: center;
+
+}
 .section-heading h2 {
     font-size: 30px;
     justify-content: center;
@@ -302,6 +311,26 @@ nav{
 }
 nav .menu{
     flex-wrap: wrap;
+}
+
+header {
+    
+    background: url(../images/header_bg.png), #FFF8F3;
+    background-position:  bottom right;
+    background-repeat: no-repeat;
+    
+}
+#banner{
+    margin: 20px;
+    gap: 20px;
+    text-align: center;
+    
+}
+#banner .banner-image img {
+    width: 100%;
+}
+#banner .banner-content h1{
+    font-size: 40px;
 }
 
 #about .about-container{
@@ -320,7 +349,7 @@ nav .menu{
 #about .about-container .about-info, 
 footer .footer-container,
 #resume.resume-container, 
-nav {
+nav, #banner {
     flex-direction: column;
 }
 
